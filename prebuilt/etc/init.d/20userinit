@@ -1,0 +1,13 @@
+#!/system/bin/sh
+# perform run-parts
+if [ "$SD_EXT_DIRECTORY" = "" ];
+then
+    SD_EXT_DIRECTORY=/sd-ext
+fi
+
+for userinit in $SD_EXT_DIRECTORY/userinit.d /data/local/userinit.d;do
+    if [ -d $userinit ];
+    then
+       logwrapper busybox run-parts $userinit
+    fi
+done

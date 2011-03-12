@@ -2,7 +2,7 @@
 #copy Gapps
 ifdef WITH_GOOGLE
     PRODUCT_COPY_FILES += \
-	vendor/htc/passion/gapps/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
+	vendor/htc/passion/gapps/CarHomeGoogle.apk:./system/app/CarHomeLauncher.apk \
 	vendor/htc/passion/gapps/Facebook.apk:./system/app/Facebook.apk \
 	vendor/htc/passion/gapps/FOTAKill.apk:./system/app/FOTAKill.apk \
 	vendor/htc/passion/gapps/GenieWidget.apk:./system/app/GenieWidget.apk \
