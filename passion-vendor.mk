@@ -16,7 +16,7 @@
 PRODUCT_DEVICE := passion
 PRODUCT_MODEL := Nexus One
 PRODUCT_NAME := passion
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion PRODUCT_MODEL="Nexus One" PRODUCT_BRAND=google BUILD_ID=GRI40 BUILD_DISPLAY_ID=GRI40 PRODUCT_LOCALE_LANGUAGE=fr PRODUCT_LOCALE_REGION=FR BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion PRODUCT_MODEL="Nexus One" PRODUCT_BRAND=google BUILD_ID=NameLess BUILD_DISPLAY_ID=GRI40 PRODUCT_LOCALE_LANGUAGE=fr PRODUCT_LOCALE_REGION=FR BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -26,7 +26,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.setupwizard.mode=OPTIONAL \
-    ro.modversion=NameLess_v0.4
+    ro.modversion=NameLess-v0.8 \
+    ro.romupdater.repository=http://178.170.121.121/
 
 # Live wallpaper packages
 PRODUCT_PACKAGES := \
@@ -34,15 +35,9 @@ PRODUCT_PACKAGES := \
     MagicSmokeWallpapers \
     VisualizationWallpapers \
     librs_jni
-# boot scripts
 
-PRODUCT_COPY_FILES += \
-    vendor/htc/passion/prebuilt/bin/sysinit.rc:/system/bin/sysinit.rc \
-    vendor/htc/passion/prebuilt/etc/init.d/00banner:/system/etc/init.d/00banner \
-    vendor/htc/passion/prebuilt/etc/init.d/03firstboot:/system/etc/init.d/03firstboot \
-    vendor/htc/passion/prebuilt/etc/init.d/05mountsd:/system/etc/init.d/05mountsd \
-    vendor/htc/passion/prebuilt/etc/init.d/10apps2sd:/system/etc/init.d/10apps2sd \
-    vendor/htc/passion/prebuilt/etc/init.d/20userinit:/system/etc/init.d/20userinit
+# Broadcom FM radio
+$(call inherit-product, vendor/htc/passion/bcm_fm_radio.mk)
 
 # Tiny toolbox
 TINY_TOOLBOX:=true
@@ -54,6 +49,7 @@ PRODUCT_COPY_FILES := \
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGE_OVERLAYS += vendor/htc/passion/overlay
     
+HAVE_2_3_DSP=1
 
 $(call inherit-product, vendor/htc/passion/device-vendor-blobs.mk)
 $(call inherit-product, vendor/htc/passion/prebuilt.mk)
