@@ -26,8 +26,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.setupwizard.mode=OPTIONAL \
-    ro.modversion=NameLess-v0.8 \
-    ro.romupdater.repository=http://178.170.121.121/
+    ro.modversion=NameLess-v0.9 \
+    ro.romupdater.repository=http://178.170.121.121/ \
+    ro.media.dec.aud.wma.enabled=1 \
+    ro.media.dec.vid.wmv.enabled=1
 
 # Live wallpaper packages
 PRODUCT_PACKAGES := \
@@ -48,9 +50,9 @@ PRODUCT_COPY_FILES := \
     
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGE_OVERLAYS += vendor/htc/passion/overlay
-    
-HAVE_2_3_DSP=1
 
+HAVE_2_3_DSP=1
+    
 $(call inherit-product, vendor/htc/passion/device-vendor-blobs.mk)
 $(call inherit-product, vendor/htc/passion/prebuilt.mk)
 $(call inherit-product, vendor/htc/passion/Gapps.mk)
