@@ -16,7 +16,7 @@
 PRODUCT_DEVICE := passion
 PRODUCT_MODEL := Nexus One
 PRODUCT_NAME := passion
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion PRODUCT_MODEL="Nexus One" PRODUCT_BRAND=google BUILD_ID=NameLess BUILD_DISPLAY_ID=GRI40 PRODUCT_LOCALE_LANGUAGE=fr PRODUCT_LOCALE_REGION=FR BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion PRODUCT_MODEL="Nexus One" PRODUCT_BRAND=google BUILD_ID=NameLess BUILD_DISPLAY_ID=GRI40 BUILD_VERSION_INCREMENTAL=010 PRODUCT_LOCALE_LANGUAGE=fr PRODUCT_LOCALE_REGION=FR BUILD_FINGERPRINT=google/passion/passion:2.3.3/GRI40/102588:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.3 GRI40 102588 release-keys"
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -26,7 +26,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
     ro.setupwizard.mode=OPTIONAL \
-    ro.modversion=NameLess-v0.9 \
+    ro.modversion=NameLess-v.1.0 \
     ro.romupdater.repository=http://178.170.121.121/ \
     ro.media.dec.aud.wma.enabled=1 \
     ro.media.dec.vid.wmv.enabled=1

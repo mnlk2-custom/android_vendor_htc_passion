@@ -1,7 +1,6 @@
 #default files
 PRODUCT_COPY_FILES += \
 	vendor/htc/passion/prebuilt/app/LiveWallpapers.apk:./system/app/LiveWallpapers.apk \
-        vendor/htc/passion/prebuilt/app/MiuiMusic.apk:./system/app/MiuiMusic.apk \
         vendor/htc/passion/prebuilt/app/ROMUpdater.apk:./system/app/ROMUpdater.apk \
 	vendor/htc/passion/prebuilt/bin/sysinit:./system/bin/sysinit \
    	vendor/htc/passion/prebuilt/etc/init.d/40a2sd:./system/etc/init.d/40a2sd \
