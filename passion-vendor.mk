@@ -38,8 +38,7 @@ PRODUCT_PACKAGES := \
     VisualizationWallpapers \
     librs_jni
 
-# Broadcom FM radio
-$(call inherit-product, vendor/htc/passion/bcm_fm_radio.mk)
+
 
 # Tiny toolbox
 TINY_TOOLBOX:=true
@@ -51,9 +50,13 @@ PRODUCT_COPY_FILES := \
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGE_OVERLAYS += vendor/htc/passion/overlay
 
-HAVE_2_3_DSP=1
-    
+# T-Mobile theme engine
+include vendor/htc/passion/themes_common.mk
+include vendor/htc/passion/themes.mk
+
+$(call inherit-product, vendor/htc/passion/packages.mk)    
 $(call inherit-product, vendor/htc/passion/device-vendor-blobs.mk)
 $(call inherit-product, vendor/htc/passion/prebuilt.mk)
 $(call inherit-product, vendor/htc/passion/Gapps.mk)
- 
+
+

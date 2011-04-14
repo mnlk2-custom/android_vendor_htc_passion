@@ -2,4 +2,6 @@
 PRODUCT_PACKAGES += \
     FM \
     hcitool \
-    DSPManager 
+    libcyanogen-dsp \
+    DSPManager \
+    HeLauncher
