@@ -1,5 +1,6 @@
 #default files
 PRODUCT_COPY_FILES += \
+	vendor/htc/passion/prebuilt/app/Cyanbread.apk:./system/app/Cyanbread.apk \
 	vendor/htc/passion/prebuilt/app/LiveWallpapers.apk:./system/app/LiveWallpapers.apk \
         vendor/htc/passion/prebuilt/app/ROMUpdater.apk:./system/app/ROMUpdater.apk \
 	vendor/htc/passion/prebuilt/bin/sysinit:./system/bin/sysinit \
