@@ -27,7 +27,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.setupwizard.mode=OPTIONAL \
     ro.modversion=NameLess-v.1.3 \
-    ro.romupdater.repository=http://update.nameless.fr/ \
+    ro.romupdater.repository=http://update.nameless-rom.fr/ \
     ro.media.dec.aud.wma.enabled=1 \
     ro.media.dec.vid.wmv.enabled=1
 
