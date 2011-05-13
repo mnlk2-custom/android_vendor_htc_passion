@@ -3,4 +3,5 @@ PRODUCT_PACKAGES += \
     FM \
     hcitool \
     libcyanogen-dsp \
-    DSPManager 
+    DSPManager \
+    NLParts
