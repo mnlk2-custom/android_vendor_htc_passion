@@ -16,7 +16,7 @@
 PRODUCT_DEVICE := passion
 PRODUCT_MODEL := Nexus One
 PRODUCT_NAME := passion
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion PRODUCT_MODEL="Nexus One" PRODUCT_BRAND=google BUILD_ID=NameLess BUILD_VERSION_INCREMENTAL=013 PRODUCT_LOCALE_LANGUAGE=fr PRODUCT_LOCALE_REGION=FR BUILD_FINGERPRINT=google/passion/passion:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.4 GRJ22 121341 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=passion PRODUCT_MODEL="Nexus One" PRODUCT_BRAND=google BUILD_ID=GRJ22 PRODUCT_LOCALE_LANGUAGE=fr PRODUCT_LOCALE_REGION=FR BUILD_FINGERPRINT=google/passion/passion:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.3.4 GRJ22 121341 release-keys"
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -27,7 +27,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.setupwizard.mode=OPTIONAL \
     ro.modversion=NameLess-v.1.4 \
-    ro.romupdater.repository=http://update.nameless-rom.fr/ \
     ro.media.dec.aud.wma.enabled=1 \
     ro.media.dec.vid.wmv.enabled=1
 

@@ -3,5 +3,5 @@ PRODUCT_PACKAGES += \
     hcitool \
     libcyanogen-dsp \
     DSPManager \
-    NLParts \
-    NameLess-Updater
+    NLUpdater \
+    NLParts
